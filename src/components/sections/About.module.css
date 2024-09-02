@@ -50,7 +50,7 @@
 
 .imageContainer {
   width: fit-content;
-  height: 320px;
+  height: 300px;
   border: 15px solid var(--primary-inverted);
   border-radius: 25px;
   overflow: hidden;
