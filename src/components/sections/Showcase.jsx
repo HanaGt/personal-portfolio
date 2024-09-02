@@ -10,24 +10,25 @@ import { motion } from "framer-motion";
 
 function Showcase() {
     const projectData = [
+       
         {
             id: 0,
-            name: "Bank Dashboard",
-            description:
-                "A bank dashboard made with react framework Nextjs. It have an add question section and also it uses Firebase Realtime Database to store the question. It also have an online and offline indication to fetch the data from the database. This application can be scalled to however much needed and we can add categories too. Take a look using the globe icon below.",
-            image: reactQuizImage,
-            languages: ["Nextjs", "TailwindCss", "RTK Query" , "Chart.js"],
-            githubLink: "https://github.com/HanaGt/Genzeb_Bank",
-            liveServer: "https://Genzeb_bank.vercel.app",
-        },
-        {
-            id: 1,
             name: "Travello",
             description:"Travello - Travel Made Simpler is a sleek and modern travel website designed to transform travel planning into a seamless and enjoyable experience. With a clean and user-friendly interface, Travello allows users to explore breathtaking destinations, discover diverse cultures, and create personalized itineraries tailored to their unique interests.",
             image: libraryImage,
             languages: ["Nextjs", "Mongodb", "RTK Query" , "TailwindCss"],
             githubLink: "https://github.com/HanaGt/Travello",
             liveServer: "https://travello-six.vercel.app/",
+        },
+        {
+            id: 1,
+            name: "Bank Dashboard",
+            description:
+                "Genzeb is an innovative financial SaaS platform designed to streamline personal and business finances by providing a centralized solution for managing multiple bank accounts. With Genzeb, users can securely connect to various bank accounts and view all their transactions in real-time, ensuring they stay up-to-date with their financial activities. it has: Real-Time Transaction Monitoring,Seamless Money Transfers,Comprehensive Financial Management",
+            image: reactQuizImage,
+            languages: ["Nextjs", "TailwindCss", "RTK Query" , "Chart.js"],
+            githubLink: "https://github.com/HanaGt/Genzeb_Bank",
+            liveServer: "https://Genzeb_bank.vercel.app",
         },
         // {
         //     id: 2,
