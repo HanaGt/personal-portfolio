@@ -57,7 +57,7 @@
   display: flex;
   background: var(--primary-inverted);
   position: absolute;
-  right: -50px;
+  right: -180px;
 }
 
 .imageContainer::before {
@@ -72,6 +72,7 @@
 
 .image {
   border-radius: 15px;
+
 }
 
 .gitContact {

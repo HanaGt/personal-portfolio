@@ -1,14 +1,12 @@
 import classes from "./Projects.module.css";
 import TW from "./TextWrapper";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faWeebly, faWeibo } from "@fortawesome/free-brands-svg-icons";
+import { faGithub} from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
 
 function Projects(props) {
-    const language = props.languages.map(lang => {
-        return <div className={classes.projectLanguages}><TW>{lang}</TW></div>;
+    const language = props.languages.map((lang, index) => {
+        return <div key={index} className={classes.projectLanguages}><TW>{lang}</TW></div>;
     })
 
     return (

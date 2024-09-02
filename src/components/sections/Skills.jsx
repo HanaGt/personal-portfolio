@@ -9,10 +9,7 @@ import {
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faAd,
   faCode,
-  faDrawPolygon,
-  faImages,
   faPaintBrush,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -56,25 +53,22 @@ function Skills() {
             <SkillSet
               language={"HTML"}
               icon={faHtml5}
-              years={"5 years"}
               percent={"95%"}
             />
             <SkillSet
-              language={"CSS"}
+              language={"CSS / Tailwind css"}
               icon={faCss3}
-              years={"5 years"}
+              // years={""}
               percent={"95%"}
             />
             <SkillSet
               language={"JavaScript"}
               icon={faJsSquare}
-              years={"4 years"}
               percent={"80%"}
             />
             <SkillSet
-              language={"React"}
+              language={"React / Nextjs"}
               icon={faReact}
-              years={"2 years"}
               percent={"60%"}
             />
           </div>
@@ -83,27 +77,11 @@ function Skills() {
             <SkillSet
               language={"Figma"}
               icon={faFigma}
-              years={"1 year"}
               percent={"80%"}
             />
-            <SkillSet
-              language={"Adobe XD"}
-              icon={faAd}
-              years={"3 years"}
-              percent={"80%"}
-            />
-            <SkillSet
-              language={"Adobe Photoshop"}
-              icon={faImages}
-              years={"3 years"}
-              percent={"60%"}
-            />
-            <SkillSet
-              language={"Adobe Illustrator"}
-              icon={faDrawPolygon}
-              years={"3 years"}
-              percent={"60%"}
-            />
+           
+           
+           
           </div>
         )}
       </div>

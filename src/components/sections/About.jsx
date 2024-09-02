@@ -1,5 +1,5 @@
 import {
-  fa3,
+  fa1,
   faAd,
   faLongArrowAltRight,
   faPlus,
@@ -15,6 +15,7 @@ import {
   faJsSquare,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import { RiNextjsFill } from "react-icons/ri"; 
 import developer from "../../assets/images/darkDev.jpg";
 import { faArrowAltCircleRight } from "@fortawesome/free-regular-svg-icons";
 import { motion } from "framer-motion";
@@ -26,18 +27,16 @@ function About() {
         <h1 className={classes.aboutTitle}>About Me</h1>
         <p className={classes.aboutDescription}>
           I am a passionate front end developer who specializes on{" "}
-          <TW fa={faHtml5}> HTML</TW>, <TW fa={faCss3}> CSS</TW>,{" "}
-          <TW fa={faJsSquare}> JavaScript</TW> and <TW fa={faReact}> React</TW>.
-          Even this website is made using React. I love programming so much and
-          web developement more than anything but I am not just a programmer, I
-          create amazing UI and UX as a website designer too. With skills of
-          both <TW fa={faFigma}> Figma</TW> and <TW fa={faAd}> Adobe XD</TW> I
+          <TW fa={faHtml5}> HTML</TW>, <TW fa={faCss3}> CSS / TailwindCss</TW>,{" "}
+          <TW fa={faJsSquare}> JavaScript</TW> ,<TW fa={faReact}> React</TW> and <TW fa={RiNextjsFill}> Next.js</TW>.{" "}
+          I love programming so much and web developement more than anything but I am not just a programmer, I
+          create amazing UI and UX as a website designer too. With skills of {" "} <TW fa={faFigma}> Figma</TW>I
           am proud to say that I have spent{" "}
-          <FontAwesomeIcon icon={fa3} />
+          <FontAwesomeIcon icon={fa1} />
           <FontAwesomeIcon icon={faPlus} /> years designing websites.
         </p>
         <button className={classes.gitContact}>
-          <a href="https://github.com/naodalemu" target="blank">
+          <a href="https://github.com/HanaGt" target="blank">
             <TW fa={faGithub}>
               {" "}
               Take a look <FontAwesomeIcon icon={faArrowAltCircleRight} />

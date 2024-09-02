@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
 import classes from "./Contact.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDiscord, faInstagram, faTelegram, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faDiscord,  faTelegram, faXTwitter,} from '@fortawesome/free-brands-svg-icons';
 import upwork from "../../assets/1929180_upwork_icon.svg"
 
 function Contact() {
@@ -23,7 +23,7 @@ function Contact() {
         setSuccessModal(false)
         setFailedModal(false)
         setLoading(true)
-        emailjs.sendForm('service_2v3pdmj', 'template_6l7ma3f', form.current, 'ai0ySokHar3c5tE5p')
+        emailjs.sendForm('service_2v3mj', 'template_6l7ma3f', form.current, 'ai0yHr3c5tE5p')
         .then((result) => {
             setLoading(false)
             console.log(result.text);
@@ -77,22 +77,16 @@ function Contact() {
             </motion.form>
             <div className={classes.contactLinksContainer}>
                 <ul className={classes.contactLinks} ref={contactList}>
-                    <a href="https://t.me/naod_alemu" target="_blank">
+                    <a href="https://t.me/irom_otnemem_h" target="_blank">
                         <motion.li className={`${classes.contactLink} ${classes.telegram}`} initial={{ opacity:0, x:100 }} whileInView={{ opacity: 1, x:0 }} transition={{ duration: 0.5, delay: 0.1 }}><FontAwesomeIcon icon={faTelegram} /></motion.li>
                     </a>
-                    <a href="https://www.upwork.com/freelancers/~01cb9ac80cc3e1114e" target="_blank">
+                    <a href="https://www.upwork.com/freelancers/~019b66e07c01d68192" target="_blank">
                         <motion.li  style={{ width: "32px", position: "relative" }} className={`${classes.contactLink} ${classes.UpWork}`} initial={{ opacity:0, x:100 }} whileInView={{ opacity: 1, x:0 }} transition={{ duration: 0.5, delay: 0.2 }}><img src={upwork} style={{ height: "45px", position: "absolute", top: "-6px", left: "-6px" }} /></motion.li>
                     </a>
-                    <a href="https://twitter.com/Hell_o_worlld" target="_blank">
-                        <motion.li className={`${classes.contactLink} ${classes.twitter}`} initial={{ opacity:0, x:100 }} whileInView={{ opacity: 1, x:0 }} transition={{ duration: 0.5, delay: 0.3 }}><FontAwesomeIcon icon={faTwitter} /></motion.li>
+                    <a href="https://twitter.com/Hana_Guta" target="_blank">
+                        <motion.li className={`${classes.contactLink} ${classes.twitter}`} initial={{ opacity:0, x:100 }} whileInView={{ opacity: 1, x:0 }} transition={{ duration: 0.5, delay: 0.3 }}><FontAwesomeIcon icon={faXTwitter} /></motion.li>
                     </a>
-                    <a href="https://wa.me/qr/ZPJQR2TG3NYEF1" target="_blank">
-                        <motion.li className={`${classes.contactLink} ${classes.whatsApp}`} initial={{ opacity:0, x:100 }} whileInView={{ opacity: 1, x:0 }} transition={{ duration: 0.5, delay: 0.4 }}><FontAwesomeIcon icon={faWhatsapp} /></motion.li>
-                    </a>
-                    <a href="https://instagram.com/naod_alemu" target="_blank">
-                        <motion.li className={`${classes.contactLink} ${classes.instagram}`} initial={{ opacity:0, x:100 }} whileInView={{ opacity: 1, x:0 }} transition={{ duration: 0.5, delay: 0.5 }}><FontAwesomeIcon icon={faInstagram} /></motion.li>
-                    </a>
-                    <a href="https://www.google.com" target="_blank">
+                    <a href="https://discord.com/users/1273562005059534901" target="_blank">
                         <motion.li className={`${classes.contactLink} ${classes.discord}`} initial={{ opacity:0, x:100 }} whileInView={{ opacity: 1, x:0 }} transition={{ duration: 0.5, delay: 0.5 }}><FontAwesomeIcon icon={faDiscord} /></motion.li>
                     </a>
                 </ul>
