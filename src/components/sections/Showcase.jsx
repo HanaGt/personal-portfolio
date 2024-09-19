@@ -5,7 +5,7 @@ import Projects from "../UI/Projects";
 import { useEffect, useState } from "react";
 import reactQuizImage from "../../assets/images/Showcase/ReactMockup-min.png";
 import libraryImage from "../../assets/images/Showcase/hero-min.png";
-// import electricBill from "../../assets/images/Showcase/ElectricBill-min.png";
+import CartNet from "../../assets/images/Showcase/CartNet.png";
 import { motion } from "framer-motion";
 
 function Showcase() {
@@ -30,16 +30,16 @@ function Showcase() {
             githubLink: "https://github.com/HanaGt/Genzeb_Bank",
             liveServer: "https://Genzeb_bank.vercel.app",
         },
-        // {
-        //     id: 2,
-        //     name: "Electric Billing Company Page",
-        //     description:
-        //         "An elegant looking and a fully functional website for an electric billing company to handle payment and user interaction. Unfortunately this page can not be hosted because of the backend code but you can see the images and the looks of it on my upwork profile by clicking the globe icon below.",
-        //     image: electricBill,
-        //     languages: ["HTML", "CSS", "JavaScript"],
-        //     githubLink: "https://github.com/naodalemu/Electric-billing-system",
-        //     liveServer: "https://github.com/naodalemu/Electric-billing-system",
-        // },
+        {
+            id: 2,
+            name: "an Ecommerce site",
+            description:
+                " a responsive e-commerce website featuring that showcases products, promotions, and new arrivals, with clean navigation and user-friendly interactions. Integrated newsletter signup and promotional banners enhance customer engagement.",
+            image: CartNet,
+            languages: ["HTML", "CSS", "bootstrapp"],
+            githubLink: "https://github.com/HanaGt/Ecommerce",
+            liveServer: "https://hanagt.github.io/Ecommerce/",
+        },
     ];
 
     const [index, setIndex] = useState(0);

@@ -1,7 +1,7 @@
 import {
   fa1,
-  faAd,
-  faLongArrowAltRight,
+  // faAd,
+  // faLongArrowAltRight,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import TW from "../UI/TextWrapper";
